@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dierentuin Anno 1200</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <ul>
+    <li><img src="images/test.jpeg" alt="Logo" class="Logo"
+      style="width:30px; height:30px"></li>
+    <li><a class="active" href="website.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  <li style=float:right><a href="login.html">Log in</a></li>
+  </ul>
+<h1 class="medievalsharp-bold">Welkom op mijn website</h1>
+<br>
+<br>
+<br>
+<p>Gebruik 1 van de knoppen hierboven om je te navigeren door mijn website!</p>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@uitgeverij-instruct/buienradar@1"></script> <script>
+  buienradar.load(function () {
+    let wanneerZonsopgang = buienradar.sunrise();
+    buienradar.date.time('zonsopgang', wanneerZonsopgang);
+    buienradar.currentLocation.temperature.actual('temperatuur');
+  });
+  </script>
+  <p>Het is op dit moment <span id="temperatuur"></span> &deg;C.</p>
+  <p>De zon komt op om <span id="zonsopgang"></span>.</p>
+  
+</body>
+
+</html>
