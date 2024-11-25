@@ -3,6 +3,10 @@ html {
     width: 100%;
   }
 
+body {
+ background-color: #caebf2;
+}
+
   .medievalsharp-regular {
     font-family: "MedievalSharp", cursive;
     font-weight: 400;
@@ -51,3 +55,11 @@ html {
     background-color: #dd2727;
   }
   /* Einde Menu bar */
+
+ 
+#square {
+  width: 100px;
+  height: 400px;
+  background: red;
+  position: fixed;
+}
