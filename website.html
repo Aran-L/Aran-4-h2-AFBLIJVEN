@@ -7,7 +7,7 @@
   <title>Dierentuin Anno 1200</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
+<script src="https://cdn.jsdelivr.net/npm/@uitgeverij-instruct/buienradar@1"></script>
 <body>
   <ul>
     <li><img src="images/test.jpeg" alt="Logo" class="Logo"
@@ -21,17 +21,19 @@
 <br>
 <p>Gebruik 1 van de knoppen hierboven om je te navigeren door mijn website!</p>
 
-<p class="pos"> test positioning</p>
-<p id="square"></p>
-  <script src="https://cdn.jsdelivr.net/npm/@uitgeverij-instruct/buienradar@1"></script> <script>
-  buienradar.load(function () {
+
+<div class="information">
+  <script>buienradar.load(function () {
     let wanneerZonsopgang = buienradar.sunrise();
     buienradar.date.time('zonsopgang', wanneerZonsopgang);
     buienradar.currentLocation.temperature.actual('temperatuur');
   });
   </script>
-  <p>Het is op dit moment <span id="temperatuur"></span> &deg;C.</p>
-  <p>De zon komt op om <span id="zonsopgang"></span>.</p>
+<p>Het is nu <span id= "temperatuur"> </span>&deg; graden </p>
+Boven de 15 &deg;? dan is er een hoge kans dat je een roofvogel tegen komt!
+</div>
+
+
   
 </body>
 
